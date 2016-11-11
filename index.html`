@@ -39,17 +39,23 @@
 	    	var b = $("#b").val();
     		var c = $("#c").val();
     		var x1, x2;
-			
-		var d = b * b  - 4 * a * c;
-		
-		if(d > 0) {
-			x1 = (-b + Math.sqrt(d)) / (2 * a);
-			x2 = (-b - Math.sqrt(d)) / (2 * a);
-		}
-		else if(d == 0) {
-			x1 = (-b) / (2 * a);
-		}
-			
+		<buttonon onclick="myFunction()"> Click me!</buttonon>
+<script tupe="text/javascript">
+var i = 0;
+function myFunction()
+{
+     alert(++i)
+	 }
+	 </script>
+
+    		
+
+
+ 
+
+
+
+    		//-----------------------
 
     		if(x1 != undefined && x2 != undefined)
     			alert("Два корня: " +  x1 + " " + x2);	
