@@ -1,1 +1,148 @@
-Hello, It Park!
+<html>
+
+
+<head>
+<title>наш любимый город</title>
+<center>Наш любимый город</center>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+</head>
+
+<body bgcolor =#52C7B9>
+
+<marquee scrollamount = 70 behavior = "slide">
+<img src = "http://chelindustry.ru/images/gal-43-Satka_3.jpg">
+
+</marquee>
+<br>
+Са́тка — город в Саткинском районе Челябинской области России. Административный центр района и Саткинского городского поселения. Население составляет 42 437 чел. (2016).
+<br><br><br>
+<table border="1">
+   <caption>таблица</caption>
+   <tr>
+    <th>месяц</th>
+    <th>температура</th>
+ 
+   </tr>
+   <tr><td>сентябрь</td><td>3,5</td><td>36</td><td>23</td></tr>
+   <tr><td>октябрь</td><td>4</td><td>36⅔</td><td>23–23,5</td></tr>
+   <tr><td>ноябрь</td><td>4,5</td><td>37⅓</td><td>23,5</td></tr>
+
+  </table>
+  <form action="handler.php">
+  <p><b>самый лучший город в челябинской области</b></p>
+  <p><input type="radio" name="answer" value="a1">Сатка<Br>
+  <input type="radio" name="answer" value="a2">Верхний Уфалей<Br>
+  <input type="radio" name="answer" value="a3">Миасс</p>
+  <p><input type="submit"></p>
+ </form>
+
+<a href="1.html"> Другие города Челябинской области<a>
+
+<table id="hh">
+</table>
+<br><br><br>
+
+<script type="text/javaScript">
+
+window.onload = function() {
+var table = document.getElementById("hh");
+for(var b = 1; b < 10; b++)
+{
+var tr = document.createElement("tr");
+for(var a = 1; a < 10; a++)
+{ 
+var td = document.createElement("td");
+td.innerHTML = a * b;
+td.width = "100px"
+tr.append(td);
+}
+table.append(tr);
+}
+}
+</script>
+<br>
+<br>
+<table id="hhh">
+</table>
+
+<br><br><br>
+<script type="text/javaScript">
+
+ 
+var table = document.getElementById("hhh");
+for(var i = 1; i<10; i++)
+{
+var tr = document.createElement("tr");
+for(var j = 1; j < 10; j++)
+{ 
+var td = document.createElement("td");
+td.innerHTML = Math.pow(i,j);
+td.width = "100px"
+tr.append(td);
+}
+table.append(tr);
+}
+
+</script>
+
+<table id="hhhh">
+</table>
+
+
+<script type="text/javaScript">
+
+ 
+var table = document.getElementById("hhhh");
+for(var i = 1; i<10; i++)
+{
+var tr = document.createElement("tr");
+for(var j = 1; j < 10; j++)
+{ 
+var td = document.createElement("td");
+td.innerHTML = "привет";
+td.width = "100px"
+tr.append(td);
+}
+table.append(tr);
+}
+<br><br><br>
+
+
+</script>
+<table id="tablica" width="10%" cellspacing="5">
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Oтчество</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Андрей</td>
+                <td>Гришко</td>
+                <td>Максимович</td>
+            </tr>
+            <tr>
+                <td>Арсений</td>
+                <td>Климентьев</td>
+                <td>Юрьевич</td>
+            </tr>
+            <tr>
+                <td>Ярослав</td>
+                <td>Курбангалеев</td>
+                <td>Михалыч</td>
+            </tr>
+       </tbody>
+    </table>
+  <script>
+  $(function(){
+    $("#tablica").dataTable();
+  })
+  </script>
+<br>
+
+
+
+</body>
+</html> 
